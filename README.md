@@ -114,11 +114,13 @@ The final model seems to make predictions in line with the Random Forest and Gra
 
 We used the following metrics to compare our models including accuracy, precision, recall, and confusion matrices.  Below are the definitions.
 
-For the random forest classifier model with all the out-of-the-box default settings, the model had the following performance metrics:
+Accuracy : 74% 
 
+Confusion matrix : 
 
+[[2566 1172]
 
-Confusion matrix :  
+ [1375 4808]]
  
  <br>
 <center>
@@ -130,12 +132,12 @@ Confusion matrix :
 <br>
 <br>
 
+Recall (probability of detection): 77.7%
 
-In the random forest model the following were found to be the most important features.  It can be seen that the top 3 included avg_dist, weekday_pct, and avg_rating_by_driver.
 
+The following were found to be the most important features:
 
- <br>
-<center>
+Feature ranking: 
 
 <img alt="Feature" src='img/rf_feature_importance.png' width=400>
 <center/>
@@ -158,16 +160,12 @@ We optimized the numbers of trees, the max feature parameters, and the max_depth
 
    
 </p>
-
 Here are the optimized parameters:
 
+n_estimators=40,max_features=5, max_depth=10
 
 
-| n_estimators       | max_features | max_depth  |
-| ------------- |:-------------:| -----:|
-| 40    | 5 | 10 |
-
-
+Here are the final optimized model metrics:
 
 Here are the final optimized model metrics and ROC curve:
 
