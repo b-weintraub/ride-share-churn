@@ -157,7 +157,7 @@ Confusion matrix :
 </p>
 
 <p align='middle'>
-    <td><img alt="Feature" src='./img/rf_roc.png' width=400></td>
+    <td><img alt="Feature" src='img/rf_roc.png' width=400></td>
 </p>
 
 
